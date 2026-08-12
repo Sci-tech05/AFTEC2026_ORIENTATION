@@ -1,0 +1,35 @@
+{% extends "admin/change_form.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="aftec-admin-shell">
+  <section class="aftec-change-hero">
+    <p class="aftec-kicker">{{ opts.verbose_name|capfirst }}</p>
+    <div class="aftec-change-top">
+      <div>
+        <h1>{{ premium_hero_title|default:opts.verbose_name }}</h1>
+        <p>{{ premium_hero_subtitle|default:"Un formulaire structuré pour une édition plus rapide et plus lisible." }}</p>
+      </div>
+      {% if original %}
+        <div class="aftec-stat" style="min-width: 220px;">
+          <strong style="font-size: 1.35rem;">{{ original }}</strong>
+          <span>Enregistrement actif</span><br>
+          <small>Tu modifies cet objet depuis le back-office AFTEC.</small>
+        </div>
+      {% endif %}
+    </div>
+
+    {% if premium_summary_cards %}
+      <div class="aftec-change-grid">
+        {% for card in premium_summary_cards %}
+          <div class="aftec-change-card">
+            <span>{{ card.label }}</span>
+            <strong>{{ card.value }}</strong>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </section>
+  {{ block.super }}
+</div>
+{% endblock %}

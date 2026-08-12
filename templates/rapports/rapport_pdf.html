@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: Arial, sans-serif; color: #26313f; margin: 32px; }
+    h1, h2 { color: #0F2C4C; }
+    .accent { color: #C9A227; font-weight: 700; }
+    table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+    th, td { border: 1px solid #d9dee7; padding: 8px; font-size: 12px; }
+    th { background: #FAFAF7; text-align: left; }
+    .notice { margin-top: 24px; padding: 12px; background: #FAFAF7; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <p class="accent">AFTEC Orientation 2026 - KcoMat Académie</p>
+  <h1>Rapport d'orientation</h1>
+  <p><strong>Candidat :</strong> {{ candidat.prenom }} {{ candidat.nom }} | <strong>Diplôme ou examen :</strong> {{ candidat.diplome_examen }} {{ candidat.option_diplome }}</p>
+  <h2>Notes saisies</h2>
+  <table>
+    <tr><th>Matière</th><th>Note</th></tr>
+    {% for note in candidat.notes.all %}<tr><td>{{ note.matiere.nom }}</td><td>{{ note.note }}/20</td></tr>{% endfor %}
+  </table>
+  <h2>Meilleures recommandations</h2>
+  <table>
+    <tr><th>Filière</th><th>Établissement</th><th>MC</th><th>Bourse</th><th>Aide/FPP</th><th>Indicateur</th></tr>
+    {% for item in recommandations %}
+      <tr>
+        <td>{{ item.filiere.intitule }}</td>
+        <td>{{ item.filiere.etablissement }}</td>
+        <td>{% if item.moyenne_classement %}{{ item.moyenne_classement }}{% else %}--{% endif %}</td>
+        <td>{{ item.filiere.quota_bourse }}</td>
+        <td>{{ item.filiere.quota_aide_fpp }}</td>
+        <td>{{ item.indicateur }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+  <h2>Débouchés du top 3</h2>
+  {% for item in recommandations|slice:":3" %}
+    <p><strong>{{ item.filiere.intitule }} :</strong> {{ item.filiere.debouches }}</p>
+  {% endfor %}
+  <p class="notice">Estimation indicative, ne remplace pas les résultats officiels du MESRS. Seule la plateforme officielle du MESRS fait foi.</p>
+</body>
+</html>

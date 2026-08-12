@@ -1,0 +1,16 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }} | AFTEC Admin{% endblock %}
+
+{% block extrastyle %}
+  {{ block.super }}
+  <link rel="icon" type="image/svg+xml" href="{% static 'icons/favicon.svg' %}">
+  <link rel="stylesheet" href="{% static 'css/admin.css' %}">
+{% endblock %}
+
+{% block branding %}
+  <h1 id="site-name"><a href="{% url 'admin:index' %}">AFTEC Admin</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

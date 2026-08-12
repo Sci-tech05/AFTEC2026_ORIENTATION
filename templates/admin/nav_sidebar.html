@@ -1,0 +1,13 @@
+{% load i18n %}
+<button class="sticky toggle-nav-sidebar aftec-nav-toggle" id="toggle-nav-sidebar" aria-label="{% translate 'Toggle navigation' %}"></button>
+<nav class="sticky aftec-nav-sidebar" id="nav-sidebar" aria-label="{% translate 'Sidebar' %}">
+  <div class="aftec-nav-header">
+    <p class="aftec-nav-eyebrow">Navigation AFTEC</p>
+    <h2>Accès rapides</h2>
+    <p>Filtre les modules, puis ouvre directement les écrans de gestion les plus utiles.</p>
+  </div>
+  <input type="search" id="nav-filter" placeholder="{% translate 'Start typing to filter…' %}" aria-label="{% translate 'Filter navigation items' %}">
+  <div class="aftec-nav-card">
+    {% include 'admin/app_list.html' with app_list=available_apps show_changelinks=False %}
+  </div>
+</nav>

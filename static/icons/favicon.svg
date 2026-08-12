@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="AFTEC">
+  <defs>
+    <linearGradient id="bg" x1="16" y1="16" x2="112" y2="112" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#12304D"/>
+      <stop offset="1" stop-color="#1D5A8D"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="36" y1="92" x2="96" y2="36" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#D8A62A"/>
+      <stop offset="1" stop-color="#FFF0BF"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="116" height="116" rx="28" fill="url(#bg)"/>
+  <circle cx="94" cy="34" r="12" fill="url(#accent)" opacity="0.92"/>
+  <path d="M35 94L56 34h16l21 60h-15l-4.2-13.2H54.2L49.7 94H35zm23.2-24.5h11.8L63.7 51.3 58.2 69.5z" fill="#FFFFFF"/>
+  <path d="M78 43h12c8.1 0 14 4.6 14 12 0 5-2.8 8.5-7.3 10.1L107 94H92.9L83 67.6H78V94H65V43h13zm0 10.8v9.3h7.3c3.5 0 5.7-1.7 5.7-4.6 0-2.9-2.2-4.7-5.7-4.7H78z" fill="#FFF7E3" opacity="0.96"/>
+</svg>

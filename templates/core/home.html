@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Accueil - AFTEC Orientation{% endblock %}
+{% block content %}
+<section class="overflow-hidden bg-[#f7f5ee]">
+  <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-[1fr_0.85fr] md:items-center md:py-14">
+    <div>
+      <p class="mb-3 text-sm font-bold uppercase tracking-wide text-[#9A6A13]">KcoMat Académie - Pobè</p>
+      <h1 class="max-w-3xl text-4xl font-black leading-tight text-[#12304D] md:text-6xl">AFTEC Orientation 2026</h1>
+      <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-700">Une plateforme mobile-first pour guider les nouveaux bacheliers béninois vers les formations compatibles avec leur série, leurs notes et leurs centres d'intérêt.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a class="rounded-lg bg-[#12304D] px-5 py-3 font-bold text-white shadow-lg shadow-slate-300 transition hover:bg-[#1b4368]" href="{% url 'candidats:orientation' %}">Commencer mon orientation</a>
+        <a class="rounded-lg border border-[#B98A1B] bg-white px-5 py-3 font-bold text-[#12304D] transition hover:bg-[#fff8df]" href="{% url 'core:etablissements' %}">Voir l'annuaire</a>
+      </div>
+    </div>
+    <div class="rounded-lg border border-white bg-white p-5 shadow-xl">
+      <p class="text-sm font-bold uppercase tracking-wide text-[#9A6A13]">Catalogue importé</p>
+      <dl class="mt-4 grid grid-cols-2 gap-3">
+        <div class="rounded-lg bg-[#12304D] p-4 text-white"><dt class="text-3xl font-black">{{ stats.offres_orientation }}</dt><dd class="text-sm text-white/75">offres d'orientation</dd></div>
+        <div class="rounded-lg bg-[#eef4f8] p-4 text-[#12304D]"><dt class="text-3xl font-black">{{ stats.filieres }}</dt><dd class="text-sm text-slate-600">filières au total</dd></div>
+        <div class="rounded-lg bg-[#fff8df] p-4 text-[#12304D]"><dt class="text-3xl font-black">{{ stats.universites }}</dt><dd class="text-sm text-slate-600">universités</dd></div>
+        <div class="rounded-lg bg-[#f0eee6] p-4 text-[#12304D]"><dt class="text-3xl font-black">{{ stats.etablissements }}</dt><dd class="text-sm text-slate-600">établissements</dd></div>
+      </dl>
+      <p class="mt-4 text-sm leading-6 text-slate-600">Les 224 offres correspondent aux formations publiques/assimilées utilisées pour l'orientation. Le total inclut aussi les formations EPES affichées dans l'annuaire.</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

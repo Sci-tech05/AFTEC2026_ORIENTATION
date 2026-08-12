@@ -1,0 +1,23 @@
+input, select, textarea {
+  display: block;
+  width: 100%;
+  margin-top: .35rem;
+  border: 1px solid #cbd5e1;
+  border-radius: .5rem;
+  padding: .72rem .85rem;
+  background: white;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: #12304d;
+  box-shadow: 0 0 0 3px rgba(18, 48, 77, .12);
+  outline: none;
+}
+input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  margin-right: .4rem;
+}
+ul.errorlist {
+  color: #b91c1c;
+  font-size: .875rem;
+}

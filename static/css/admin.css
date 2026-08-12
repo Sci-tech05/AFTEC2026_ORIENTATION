@@ -1,0 +1,863 @@
+:root {
+  --aftec-navy: #12304d;
+  --aftec-gold: #b98a1b;
+  --aftec-gold-soft: #fff7de;
+  --aftec-ink: #1f2937;
+  --aftec-surface: #ffffff;
+  --aftec-bg: #f5f1e7;
+  --aftec-border: #d8dee7;
+}
+
+body.login,
+body.dashboard {
+  background:
+    radial-gradient(circle at top left, rgba(185, 138, 27, 0.16), transparent 24%),
+    radial-gradient(circle at top right, rgba(18, 48, 77, 0.14), transparent 22%),
+    linear-gradient(180deg, #f8f5ed 0%, #edf2f7 100%);
+}
+
+body.login #header,
+body.login .breadcrumbs,
+body.login #nav-sidebar,
+body.login #toggle-nav-sidebar,
+body.login #user-tools {
+  display: none !important;
+}
+
+body.login #container {
+  padding-top: 0;
+}
+
+body.login #content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body.login #content-main {
+  width: 100%;
+}
+
+body.dashboard #container {
+  padding-top: 0;
+}
+
+body.dashboard #content {
+  margin: 0;
+  padding: 24px 24px 40px 24px;
+}
+
+body.dashboard #content-main {
+  width: 100%;
+}
+
+body.dashboard .main,
+body.dashboard .content,
+body.dashboard .content-main {
+  margin: 0;
+  padding: 0;
+}
+
+body.dashboard #nav-sidebar {
+  width: 280px;
+}
+
+body.dashboard #content-main {
+  margin-left: 280px;
+}
+
+.aftec-nav-sidebar {
+  width: 280px;
+  padding: 18px 14px 20px;
+  background: linear-gradient(180deg, #f9fbfe 0%, #eef3f8 100%);
+  border-right: 1px solid rgba(18, 48, 77, 0.08);
+  box-shadow: 10px 0 30px rgba(15, 23, 42, 0.05);
+}
+
+.aftec-nav-toggle {
+  top: 74px;
+  left: 264px;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: #12304d;
+  box-shadow: 0 10px 20px rgba(18, 48, 77, 0.2);
+}
+
+.aftec-nav-header {
+  padding: 10px 10px 14px;
+  margin-bottom: 12px;
+}
+
+.aftec-nav-eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--aftec-gold);
+}
+
+.aftec-nav-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.1;
+  color: var(--aftec-navy);
+}
+
+.aftec-nav-header p {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.aftec-nav-sidebar #nav-filter {
+  width: 100%;
+  min-height: 42px;
+  margin: 0 0 14px;
+  padding: 0 12px;
+  border: 1px solid #d6dee7;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.05);
+}
+
+.aftec-nav-card {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(18, 48, 77, 0.08);
+  border-radius: 18px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.aftec-nav-sidebar #nav-sidebar .module {
+  margin-bottom: 10px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #dbe3eb;
+  background: white;
+}
+
+.aftec-nav-sidebar #nav-sidebar .module h2,
+.aftec-nav-sidebar #nav-sidebar .module summary,
+.aftec-nav-sidebar #nav-sidebar .module caption {
+  background: linear-gradient(135deg, #12304d, #1b4368);
+  color: white;
+  border: none;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 12px 14px;
+}
+
+.aftec-nav-sidebar #nav-sidebar .module ul {
+  padding: 8px 8px 10px;
+}
+
+.aftec-nav-sidebar #nav-sidebar .module li {
+  margin: 0;
+}
+
+.aftec-nav-sidebar #nav-sidebar .module li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 10px;
+  border-radius: 12px;
+  color: var(--aftec-navy);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.aftec-nav-sidebar #nav-sidebar .module li a:hover {
+  background: #f4f8fb;
+}
+
+.aftec-nav-sidebar #nav-sidebar .module li .addlink {
+  color: var(--aftec-gold);
+}
+
+.aftec-nav-sidebar #nav-sidebar .module li .viewlink {
+  color: #1f6f5b;
+}
+
+body.dashboard .toggle-nav-sidebar,
+body.dashboard #nav-sidebar {
+  transition: width 180ms ease, margin 180ms ease, transform 180ms ease, opacity 180ms ease;
+}
+
+body.dashboard.nav-sidebar-open #content-main {
+  margin-left: 280px;
+}
+
+body.dashboard.nav-sidebar-hidden #content-main {
+  margin-left: 0;
+}
+
+body.login .main,
+body.login .content,
+body.login .content-main {
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  background: linear-gradient(135deg, var(--aftec-navy), #1b4368);
+  color: white;
+  box-shadow: 0 10px 30px rgba(18, 48, 77, 0.18);
+}
+
+#branding h1,
+#branding h1 a,
+#user-tools,
+#user-tools a {
+  color: white;
+}
+
+.aftec-admin-shell {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.aftec-hero,
+.aftec-panel,
+.aftec-card,
+.aftec-table,
+.aftec-model,
+.aftec-login-card {
+  background: var(--aftec-surface);
+  border: 1px solid rgba(18, 48, 77, 0.08);
+  border-radius: 22px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.aftec-hero {
+  padding: 28px;
+  background: linear-gradient(135deg, #12304d, #1e4f7c);
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.aftec-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.14), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(185, 138, 27, 0.22), transparent 24%);
+  pointer-events: none;
+}
+
+.aftec-kicker {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.aftec-hero h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  line-height: 1.05;
+}
+
+.aftec-hero p {
+  margin: 14px 0 0;
+  max-width: 56rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.aftec-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.aftec-stat {
+  background: rgba(255, 255, 255, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  padding: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.aftec-stat strong {
+  display: block;
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.aftec-section {
+  margin-top: 24px;
+}
+
+.aftec-section h2,
+.aftec-section h3 {
+  color: var(--aftec-navy);
+}
+
+.aftec-section .module,
+.aftec-section .app-auth,
+.aftec-section .app-candidats,
+.aftec-section .app-catalogue,
+.aftec-section .app-core,
+.aftec-section .app-rapports,
+.aftec-section .app-moteur {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.aftec-login-wrap {
+  min-height: calc(100vh - 64px);
+  width: min(1240px, calc(100vw - 32px));
+  margin: 0 auto;
+  padding: 20px 0 28px;
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.aftec-login-aside {
+  padding: 34px;
+  border-radius: 28px;
+  background: linear-gradient(160deg, #12304d, #1f5a8a 60%, #b98a1b 160%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.aftec-login-aside::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.15), transparent 26%);
+}
+
+.aftec-login-aside .badge {
+  display: inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.aftec-login-aside h1 {
+  margin: 18px 0 12px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 0.98;
+}
+
+.aftec-login-aside p {
+  max-width: 42rem;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.aftec-login-features {
+  display: grid;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.aftec-login-feature {
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.aftec-login-card {
+  padding: 34px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aftec-login-card-head h2 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  color: var(--aftec-navy);
+}
+
+.aftec-login-card-head p {
+  margin: 10px 0 0;
+  color: #5d6b78;
+  line-height: 1.6;
+}
+
+.aftec-login-form {
+  margin-top: 22px;
+  display: grid;
+  gap: 16px;
+}
+
+.aftec-login-field {
+  display: grid;
+  gap: 8px;
+}
+
+.aftec-login-field label {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--aftec-navy);
+}
+
+.aftec-login-field input {
+  width: 100%;
+  min-height: 52px;
+  border-radius: 14px;
+  border: 1px solid var(--aftec-border);
+  background: linear-gradient(180deg, #ffffff, #fbfcfe);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.aftec-login-field input:focus {
+  border-color: rgba(18, 48, 77, 0.55);
+  box-shadow: 0 0 0 4px rgba(18, 48, 77, 0.09);
+}
+
+.aftec-login-actions {
+  margin-top: 8px;
+  display: grid;
+  gap: 10px;
+}
+
+.aftec-login-actions button {
+  width: 100%;
+  min-height: 52px;
+  border-radius: 14px;
+  font-size: 1rem;
+  box-shadow: 0 14px 28px rgba(18, 48, 77, 0.18);
+}
+
+.aftec-login-actions p {
+  margin: 0;
+  font-size: 0.86rem;
+  color: #64748b;
+  text-align: center;
+}
+
+.aftec-login-card .errornote {
+  margin: 0 0 14px;
+}
+
+.aftec-login-card .submit-row input,
+.aftec-login-card .submit-row button,
+.aftec-login-card .submit-row a {
+  border-radius: 14px;
+}
+
+.aftec-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.aftec-dashboard-shell {
+  width: 100%;
+  max-width: none;
+  display: grid;
+  gap: 22px;
+}
+
+.aftec-dashboard-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(320px, 0.75fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.aftec-dashboard-hero,
+.aftec-dashboard-side {
+  min-width: 0;
+}
+
+.aftec-dashboard-hero {
+  padding: 30px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #12304d, #1a4a76 55%, #b98a1b 180%);
+  color: white;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.16);
+}
+
+.aftec-dashboard-hero h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3.4vw, 3.15rem);
+  line-height: 0.98;
+}
+
+.aftec-dashboard-hero p {
+  margin: 14px 0 0;
+  max-width: 64rem;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.65;
+}
+
+.aftec-dashboard-actions {
+  margin-top: 18px;
+}
+
+.aftec-dashboard-side {
+  display: grid;
+  gap: 16px;
+}
+
+.aftec-quick-panel {
+  padding: 18px;
+}
+
+.aftec-quick-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.aftec-quick-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 14px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #fbfcfe, #f4f7fb);
+  border: 1px solid var(--aftec-border);
+  color: var(--aftec-navy);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.aftec-quick-list a::after {
+  content: ">";
+  color: var(--aftec-gold);
+  font-weight: 900;
+}
+
+.aftec-tracking-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.aftec-tracking-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 10px;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #fbfcfe;
+  border: 1px solid var(--aftec-border);
+}
+
+.aftec-tracking-item strong {
+  font-size: 1.15rem;
+  color: var(--aftec-navy);
+}
+
+.aftec-tracking-item span {
+  color: #536273;
+  font-size: 0.95rem;
+}
+
+.aftec-table-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.aftec-table-head h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--aftec-navy);
+}
+
+.aftec-table-head span {
+  color: #64748b;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.aftec-table-body {
+  padding: 12px 20px 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.aftec-row-card {
+  display: grid;
+  gap: 4px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #fbfcfe;
+  border: 1px solid #e7edf4;
+}
+
+.aftec-row-card strong {
+  color: var(--aftec-navy);
+}
+
+.aftec-row-card small,
+.aftec-empty-state {
+  color: #64748b;
+}
+
+.aftec-recent-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.aftec-module-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 18px;
+}
+
+.aftec-module-card {
+  border-radius: 18px;
+  border: 1px solid var(--aftec-border);
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  padding: 16px;
+}
+
+.aftec-module-head {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.aftec-module-head strong {
+  color: var(--aftec-navy);
+}
+
+.aftec-module-head span {
+  font-size: 0.82rem;
+  color: #64748b;
+  font-weight: 700;
+}
+
+.aftec-module-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.aftec-module-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid #d9e2ea;
+  background: white;
+  color: var(--aftec-navy);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.aftec-module-links a:hover,
+.aftec-quick-list a:hover,
+.aftec-toolbar a:hover,
+.aftec-toolbar button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08);
+}
+
+.aftec-mini-card {
+  background: white;
+  border: 1px solid var(--aftec-border);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+}
+
+.aftec-mini-card .eyebrow {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--aftec-gold);
+  font-weight: 800;
+}
+
+.aftec-mini-card .value {
+  display: block;
+  margin-top: 8px;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--aftec-navy);
+}
+
+.aftec-change-hero {
+  margin: 0 0 24px;
+  padding: 24px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #12304d, #1d4c79 70%, #b98a1b 170%);
+  color: white;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.16);
+}
+
+.aftec-change-hero .aftec-kicker {
+  margin-bottom: 10px;
+}
+
+.aftec-change-hero h1 {
+  margin: 0;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  line-height: 1.05;
+}
+
+.aftec-change-hero p {
+  margin: 10px 0 0;
+  max-width: 56rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.aftec-change-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.aftec-change-card {
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(8px);
+}
+
+.aftec-change-card span {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.75;
+  margin-bottom: 6px;
+}
+
+.aftec-change-card strong {
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.aftec-admin-shell .submit-row,
+.aftec-admin-shell .submit-row.top,
+.aftec-admin-shell .submit-row.bottom {
+  border-radius: 18px;
+}
+
+.aftec-admin-shell .module,
+.aftec-admin-shell .inline-group,
+.aftec-admin-shell .module.aligned,
+.aftec-admin-shell .module.collapse,
+.aftec-admin-shell .module.renamed,
+.aftec-admin-shell .grp-module,
+.aftec-admin-shell .form-row {
+  border-radius: 18px;
+}
+
+.aftec-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.aftec-toolbar a,
+.aftec-toolbar button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.aftec-btn-primary {
+  background: var(--aftec-navy);
+  color: white;
+}
+
+.aftec-btn-secondary {
+  background: white;
+  color: var(--aftec-navy);
+  border-color: var(--aftec-border);
+}
+
+.aftec-table-card {
+  background: white;
+  border: 1px solid var(--aftec-border);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+@media (max-width: 960px) {
+  .aftec-login-wrap {
+    grid-template-columns: 1fr;
+    width: min(100%, calc(100vw - 24px));
+    padding-top: 12px;
+  }
+
+  .aftec-login-aside {
+    padding: 26px;
+  }
+
+  .aftec-login-card {
+    padding: 22px;
+  }
+
+  body.dashboard #content {
+    padding: 16px 16px 28px 16px;
+  }
+
+  .aftec-dashboard-top {
+    grid-template-columns: 1fr;
+  }
+
+  .aftec-dashboard-hero {
+    padding: 24px;
+  }
+
+  .aftec-module-grid {
+    padding: 14px;
+  }
+
+  body.dashboard #content,
+  body.dashboard #content-main {
+    margin-left: 0;
+  }
+
+  body.dashboard #nav-sidebar {
+    width: 100%;
+    position: relative;
+  }
+
+  .aftec-nav-toggle {
+    left: auto;
+    right: 18px;
+    top: 68px;
+  }
+}

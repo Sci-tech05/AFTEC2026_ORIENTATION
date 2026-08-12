@@ -1,0 +1,132 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+
+{% block bodyclass %}dashboard{% endblock %}
+
+{% block content %}
+<div class="aftec-admin-shell aftec-dashboard-shell">
+  <section class="aftec-dashboard-top">
+    <div class="aftec-dashboard-hero">
+      <p class="aftec-kicker">Pilotage AFTEC</p>
+      <h1>Bienvenue, {{ request.user.username|default:"ADMIN"|upper }}</h1>
+      <p>Tu pilotes ici les contenus du guide MESRS, les profils candidats et les offres d’orientation. Les blocs ci-dessous donnent un accès rapide aux actions utiles et aux données récentes.</p>
+      <div class="aftec-card-grid">
+        {% for card in dashboard_cards %}
+          <div class="aftec-stat">
+            <strong>{{ card.value }}</strong>
+            <span>{{ card.label }}</span><br>
+            <small>{{ card.description }}</small>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="aftec-toolbar aftec-dashboard-actions">
+        <a class="aftec-btn-primary" href="{% url 'admin:catalogue_filiere_add' %}">Nouvelle filière</a>
+        <a class="aftec-btn-secondary" href="{% url 'admin:candidats_candidat_add' %}">Nouveau candidat</a>
+        <a class="aftec-btn-secondary" href="{% url 'admin:catalogue_etablissement_add' %}">Nouvel établissement</a>
+        <a class="aftec-btn-secondary" href="{% url 'admin:catalogue_seriebac_add' %}">Nouvelle série BAC</a>
+      </div>
+    </div>
+
+    <aside class="aftec-dashboard-side">
+      <div class="aftec-mini-card aftec-quick-panel">
+        <span class="eyebrow">Raccourcis</span>
+        <div class="aftec-quick-list">
+          <a href="{% url 'admin:catalogue_categorieetablissement_add' %}">Créer une catégorie</a>
+          <a href="{% url 'admin:catalogue_universite_add' %}">Créer une université</a>
+          <a href="{% url 'admin:catalogue_seriematierecoefficient_add' %}">Ajouter un coefficient BAC</a>
+          <a href="{% url 'admin:catalogue_matiereclassement_add' %}">Définir un classement</a>
+        </div>
+      </div>
+
+      <div class="aftec-mini-card aftec-quick-panel">
+        <span class="eyebrow">État du système</span>
+        <div class="aftec-tracking-list">
+          {% for name, count, model_path in tracking_models|slice:":6" %}
+            <div class="aftec-tracking-item">
+              <strong>{{ count }}</strong>
+              <span>{{ name }}</span>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="aftec-section aftec-mini-grid aftec-recent-grid">
+    <div class="aftec-table-card">
+      <div class="aftec-table-head">
+        <h2>Derniers candidats</h2>
+        <span>{{ recent_candidates|length }} affichés</span>
+      </div>
+      <div class="aftec-table-body">
+        {% for candidat in recent_candidates %}
+          <article class="aftec-row-card">
+            <strong>{{ candidat.prenom }} {{ candidat.nom }}</strong>
+            <small>{{ candidat.serie_bac }} - {{ candidat.get_diplome_examen_display }}</small>
+          </article>
+        {% empty %}
+          <p class="aftec-empty-state">Aucun candidat pour le moment.</p>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="aftec-table-card">
+      <div class="aftec-table-head">
+        <h2>Dernières filières</h2>
+        <span>{{ recent_filieres|length }} affichées</span>
+      </div>
+      <div class="aftec-table-body">
+        {% for filiere in recent_filieres %}
+          <article class="aftec-row-card">
+            <strong>{{ filiere.intitule }}</strong>
+            <small>{{ filiere.etablissement }} - {{ filiere.get_mode_entree_display }}</small>
+          </article>
+        {% empty %}
+          <p class="aftec-empty-state">Aucune filière enregistrée.</p>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="aftec-table-card">
+      <div class="aftec-table-head">
+        <h2>Derniers établissements</h2>
+        <span>{{ recent_etablissements|length }} affichés</span>
+      </div>
+      <div class="aftec-table-body">
+        {% for etablissement in recent_etablissements %}
+          <article class="aftec-row-card">
+            <strong>{{ etablissement.nom }}</strong>
+            <small>{{ etablissement.categorie.nom }} - {{ etablissement.get_secteur_display }}</small>
+          </article>
+        {% empty %}
+          <p class="aftec-empty-state">Aucun établissement enregistré.</p>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="aftec-section">
+    <div class="aftec-table-card">
+      <div class="aftec-table-head">
+        <h2>Modules disponibles</h2>
+        <span>{{ app_list|length }} applications</span>
+      </div>
+      <div class="aftec-module-grid">
+        {% for app in app_list %}
+          <article class="aftec-module-card">
+            <div class="aftec-module-head">
+              <strong>{{ app.name }}</strong>
+              <span>{{ app.models|length }} modèles</span>
+            </div>
+            <div class="aftec-module-links">
+              {% for model in app.models %}
+                <a href="{{ model.admin_url }}">{{ model.name }}</a>
+              {% endfor %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}

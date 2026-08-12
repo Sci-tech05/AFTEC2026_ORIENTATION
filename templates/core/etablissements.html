@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% block title %}Annuaire - AFTEC{% endblock %}
+{% block content %}
+<section class="bg-[#f7f5ee]">
+  <div class="mx-auto max-w-6xl px-4 py-8 md:py-12">
+    <div class="grid gap-6 md:grid-cols-[1fr_.72fr] md:items-end">
+      <div>
+        <p class="text-sm font-bold uppercase tracking-wide text-[#9A6A13]">Guide MESRS 2026-2027</p>
+        <h1 class="mt-2 text-3xl font-black leading-tight text-[#12304D] md:text-5xl">Annuaire des établissements</h1>
+        <p class="mt-4 max-w-3xl text-base leading-7 text-slate-700">Explore les établissements et les filières importés depuis le guide d'orientation. Les offres publiques et assimilées servent au calcul d'orientation, les EPES complètent l'annuaire.</p>
+      </div>
+      <dl class="grid grid-cols-2 gap-3">
+        <div class="rounded-lg bg-[#12304D] p-4 text-white shadow"><dt class="text-3xl font-black">{{ stats.etablissements }}</dt><dd class="text-sm text-white/75">établissements</dd></div>
+        <div class="rounded-lg bg-white p-4 text-[#12304D] shadow"><dt class="text-3xl font-black">{{ stats.filieres }}</dt><dd class="text-sm text-slate-600">filières</dd></div>
+        <div class="rounded-lg bg-[#fff8df] p-4 text-[#12304D] shadow"><dt class="text-3xl font-black">{{ stats.offres_orientation }}</dt><dd class="text-sm text-slate-600">offres orientation</dd></div>
+        <div class="rounded-lg bg-[#eef4f8] p-4 text-[#12304D] shadow"><dt class="text-3xl font-black">{{ stats.categories }}</dt><dd class="text-sm text-slate-600">catégories</dd></div>
+      </dl>
+    </div>
+
+    <form class="mt-8 grid gap-3 rounded-lg bg-white p-3 shadow-lg md:grid-cols-[1fr_auto]">
+      <input name="q" value="{{ query }}" placeholder="Rechercher une filière, un établissement ou un débouché">
+      <button class="rounded-lg bg-[#12304D] px-6 py-3 font-bold text-white shadow transition hover:bg-[#1b4368]">Rechercher</button>
+    </form>
+  </div>
+</section>
+
+<section class="mx-auto max-w-6xl px-4 py-8">
+  {% if query %}
+    <div class="mb-8">
+      <div class="mb-4 flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-wide text-[#9A6A13]">Résultats</p>
+          <h2 class="text-2xl font-black text-[#12304D]">Recherche : "{{ query }}"</h2>
+        </div>
+        <a class="text-sm font-bold text-[#12304D]" href="{% url 'core:etablissements' %}">Réinitialiser</a>
+      </div>
+        <div class="mb-6">
+          <h3 class="mb-3 text-lg font-black text-[#12304D]">Établissements</h3>
+          <div class="grid gap-4 md:grid-cols-2">
+            {% for etablissement in filtered %}
+              <article class="rounded-lg border border-slate-200 bg-white p-4 shadow">
+                <p class="text-xs font-bold uppercase tracking-wide text-[#9A6A13]">{{ etablissement.categorie.code }} - {{ etablissement.categorie.nom }}</p>
+                <h4 class="mt-2 text-lg font-black text-[#12304D]">{{ etablissement.nom }}</h4>
+                <p class="mt-1 text-sm text-slate-600">{{ etablissement.get_secteur_display }}{% if etablissement.ville %} - {{ etablissement.ville }}{% endif %}{% if etablissement.universite %} - {{ etablissement.universite.nom }}{% endif %}</p>
+                <p class="mt-3 text-xs font-bold text-[#12304D]">{{ etablissement.filieres.all|length }} filières</p>
+              </article>
+            {% empty %}
+              <p class="rounded-lg bg-white p-5 shadow">Aucun établissement ne correspond à cette recherche.</p>
+            {% endfor %}
+          </div>
+        </div>
+      <div class="grid gap-4 md:grid-cols-2">
+        {% for filiere in filtered_filieres %}
+          <article class="rounded-lg border border-slate-200 bg-white p-4 shadow">
+            <p class="text-xs font-bold uppercase tracking-wide text-[#9A6A13]">{{ filiere.etablissement.categorie.code }} - {{ filiere.etablissement.categorie.nom }}</p>
+            <h3 class="mt-2 text-lg font-black text-[#12304D]">{{ filiere.intitule }}</h3>
+            <p class="mt-1 text-sm text-slate-600">{{ filiere.etablissement.nom }}</p>
+            <div class="mt-3 flex flex-wrap gap-2 text-xs font-bold">
+              <span class="rounded bg-[#F4F1E8] px-2 py-1">Mode : {{ filiere.get_mode_entree_display }}</span>
+              <span class="rounded bg-[#eef4f8] px-2 py-1">Bourse {{ filiere.quota_bourse }}</span>
+              <span class="rounded bg-[#fff8df] px-2 py-1">Aide/FPP {{ filiere.quota_aide_fpp }}</span>
+            </div>
+          </article>
+        {% empty %}
+          <p class="rounded-lg bg-white p-5 shadow">Aucune filière ne correspond à cette recherche.</p>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if not query %}
+    <div class="mb-5">
+      <p class="text-sm font-bold uppercase tracking-wide text-[#9A6A13]">Classement officiel</p>
+      <h2 class="text-2xl font-black text-[#12304D]">Catégories du guide</h2>
+    </div>
+
+    <div class="space-y-4">
+      {% for categorie in categories %}
+        <details class="group rounded-lg border border-slate-200 bg-white shadow" {% if forloop.counter <= 2 %}open{% endif %}>
+          <summary class="flex cursor-pointer list-none flex-wrap items-center justify-between gap-3 p-5">
+            <div>
+              <p class="text-sm font-bold uppercase tracking-wide text-[#9A6A13]">Catégorie {{ categorie.code }}</p>
+              <h3 class="text-xl font-black text-[#12304D]">{{ categorie.nom }}</h3>
+            </div>
+            <div class="flex flex-wrap gap-2 text-sm font-bold text-[#12304D]">
+              <span class="rounded bg-[#F4F1E8] px-3 py-2">{{ categorie.etablissement_count }} établissements</span>
+              <span class="rounded bg-[#eef4f8] px-3 py-2">{{ categorie.filiere_count }} filières</span>
+            </div>
+          </summary>
+          <div class="border-t border-slate-100 p-5">
+            <div class="grid gap-4">
+              {% for etablissement in categorie.etablissements.all %}
+                <article class="rounded-lg border border-slate-200 bg-[#fbfaf6] p-4">
+                  <div class="flex flex-wrap items-start justify-between gap-3">
+                    <div>
+                      <h4 class="text-lg font-black text-[#12304D]">{{ etablissement.nom }}</h4>
+                      <p class="mt-1 text-sm text-slate-600">{{ etablissement.get_secteur_display }}{% if etablissement.ville %} - {{ etablissement.ville }}{% endif %}{% if etablissement.universite %} - {{ etablissement.universite.nom }}{% endif %}</p>
+                    </div>
+                    <span class="rounded bg-white px-3 py-2 text-sm font-bold text-[#12304D] shadow-sm">{{ etablissement.filieres.all|length }} filières</span>
+                  </div>
+                  <div class="mt-4 grid gap-2 md:grid-cols-2">
+                    {% for filiere in etablissement.filieres.all %}
+                      <div class="rounded border border-slate-200 bg-white p-3 text-sm">
+                        <p class="font-bold text-[#12304D]">{{ filiere.intitule }}</p>
+                        <p class="mt-1 text-xs text-slate-600">{{ filiere.get_mode_entree_display }} - Bourse {{ filiere.quota_bourse }} - Aide/FPP {{ filiere.quota_aide_fpp }}</p>
+                      </div>
+                    {% empty %}
+                      <p class="text-sm text-slate-500">Filières à compléter.</p>
+                    {% endfor %}
+                  </div>
+                </article>
+              {% empty %}
+                <p class="text-sm text-slate-500">Aucun établissement enregistré pour cette catégorie.</p>
+              {% endfor %}
+            </div>
+          </div>
+        </details>
+      {% endfor %}
+    </div>
+  {% endif %}
+</section>
+{% endblock %}

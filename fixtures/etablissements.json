@@ -1,0 +1,2363 @@
+[
+{
+  "model": "catalogue.etablissement",
+  "pk": 192,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Centre de Formation et de Recherche en matière de Population (CEFORP)",
+    "sigle": "CEFORP",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 193,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Centre Inter Facultaire de Formation et de Recherche en Environnement pour le Développement Durable (CIFRED)",
+    "sigle": "CIFRED",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 194,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "École du Patrimoine Africain (EPA)",
+    "sigle": "EPA",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 195,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Ecole Nationale d'Administration (Ex. Ecole Nationale d'Administration et",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 196,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "de Magistrature-ENAM)",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 197,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Ecole Nationale d'Economie Appliquée et de Management (ENEAM)",
+    "sigle": "ENEAM",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 198,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Ecole Nationale des Sciences et Techniques de l'Information et de la Communication",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 199,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "(ENSTIC)",
+    "sigle": "ENSTIC",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 200,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Ecole Normale Supérieure /Porto-Novo",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 201,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Ecole Polytechnique d'Abomey-Calavi (EPAC)",
+    "sigle": "EPAC",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 202,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Faculté de Droit et de Science 9",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 203,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Politique (FADESP)",
+    "sigle": "FADESP",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 204,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Faculté des Lettres, Arts et Sciences Humaines-Adjarra (FLASH-Adjarra)",
+    "sigle": "FLASH-Adjarra",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 205,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Faculté des Lettres, Langues, Arts et Communications (FLLAC)",
+    "sigle": "FLLAC",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 206,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Faculté des Sciences Agronomiques (FSA)",
+    "sigle": "FSA",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 207,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Faculté des Sciences de la Santé (FSS)",
+    "sigle": "FSS",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 208,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Faculté des Sciences Economiques et de Gestion (FASEG)",
+    "sigle": "FASEG",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 209,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Faculté des Sciences Humaines et Sociales (FASHS Calavi)",
+    "sigle": "FASHS Calavi",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 210,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Faculté des Sciences Techniques (FAST)",
+    "sigle": "FAST",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 211,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Haute Ecole Régionale de Commerce International (HERCI)",
+    "sigle": "HERCI",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 212,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Institut Confucius",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 213,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Institut de Cadre de Vie (Ex. Institut de Géographie de",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 214,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "19 l'Aménagement du Territoire et de l'Environnement-IGATE)",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 215,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Institut de Formation et de Recherche en Informatique (IFRI)",
+    "sigle": "IFRI",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 216,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Institut de Langue Arabe et Culture Islamique (ILACI)",
+    "sigle": "ILACI",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 217,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Institut de Mathématiques et de Sciences Physiques (IMSP)",
+    "sigle": "IMSP",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 218,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Institut National de l'Eau (INE",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 219,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Institut National de l’Education Physique et Sportive (Ex. Institut National de la Jeunesse",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 220,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "de l'Education Physique et Sportive-INJEPS)",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 221,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Institut National des Métiers d'Arts, d'Archéologie et de la Culture (INMAAC)",
+    "sigle": "INMAAC",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 222,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Institut National 26",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 223,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Médico-Sanitaire (INMeS)",
+    "sigle": "INMeS",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 224,
+  "fields": {
+    "universite": 16,
+    "categorie": 19,
+    "nom": "Institut Régional de Santé Publique (IRSP) II - Université de Parakou II — Université de Parakou",
+    "sigle": "IRSP",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 225,
+  "fields": {
+    "universite": 17,
+    "categorie": 20,
+    "nom": "Ecole Nationale de formation des Techniciens Supérieurs en Santé Publique et Surveillance Epidémiologique (ENATSE)",
+    "sigle": "ENATSE",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 226,
+  "fields": {
+    "universite": 17,
+    "categorie": 20,
+    "nom": "Ecole Nationale de Statistique, de Planification et de",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 227,
+  "fields": {
+    "universite": 17,
+    "categorie": 20,
+    "nom": "Démographie (ENSPD) II — Université de Parakou",
+    "sigle": "ENSPD",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 228,
+  "fields": {
+    "universite": 17,
+    "categorie": 20,
+    "nom": "Faculté d'Agronomie(FA)",
+    "sigle": "FA",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 229,
+  "fields": {
+    "universite": 17,
+    "categorie": 20,
+    "nom": "Faculté de Droit et Sciences Politiques (FDSP)",
+    "sigle": "FDSP",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 230,
+  "fields": {
+    "universite": 17,
+    "categorie": 20,
+    "nom": "II — Université de Parakou",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 231,
+  "fields": {
+    "universite": 17,
+    "categorie": 20,
+    "nom": "Faculté de Médecine (FM)",
+    "sigle": "FM",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 232,
+  "fields": {
+    "universite": 17,
+    "categorie": 20,
+    "nom": "Faculté de Sciences Economiques et de Gestion (FASEG) II — Université de Parakou",
+    "sigle": "FASEG",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 233,
+  "fields": {
+    "universite": 17,
+    "categorie": 20,
+    "nom": "Faculté des Lettres, Arts et Sciences Humaines (FLASH)",
+    "sigle": "FLASH",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 234,
+  "fields": {
+    "universite": 17,
+    "categorie": 20,
+    "nom": "Institut de Formation en Soins Infirmiers et Obstétricaux",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 235,
+  "fields": {
+    "universite": 17,
+    "categorie": 20,
+    "nom": "(IFSIO) II — Université de Parakou",
+    "sigle": "IFSIO",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 236,
+  "fields": {
+    "universite": 17,
+    "categorie": 20,
+    "nom": "Institut Universitaire de Technologie (IUT)",
+    "sigle": "IUT",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 237,
+  "fields": {
+    "universite": 17,
+    "categorie": 20,
+    "nom": "Technologies, Ingénierie et Mathématique",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 238,
+  "fields": {
+    "universite": 18,
+    "categorie": 21,
+    "nom": "Ecole Nationale Supérieure de Génie Energétique et Procédés (ENSGEP)",
+    "sigle": "ENSGEP",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 239,
+  "fields": {
+    "universite": 18,
+    "categorie": 21,
+    "nom": "Ecole Nationale Supérieure des",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 240,
+  "fields": {
+    "universite": 18,
+    "categorie": 21,
+    "nom": "Biosciences et Biotechnologies Appliquées (ENSBBA)",
+    "sigle": "ENSBBA",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 241,
+  "fields": {
+    "universite": 18,
+    "categorie": 21,
+    "nom": "Ecole Nationale Supérieure des Travaux Publics (ENSTP)",
+    "sigle": "ENSTP",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 242,
+  "fields": {
+    "universite": 18,
+    "categorie": 21,
+    "nom": "Ecole Normale Supérieure de l'Enseignement technique (ENSET)",
+    "sigle": "ENSET",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 243,
+  "fields": {
+    "universite": 18,
+    "categorie": 21,
+    "nom": "Ecole Normale Supérieure de Natitingou (ENS/Nati)",
+    "sigle": "ENS/Nati",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 244,
+  "fields": {
+    "universite": 18,
+    "categorie": 21,
+    "nom": "Faculté des Sciences et Techniques de Natitingou (FAST/Natitingou)",
+    "sigle": "FAST/Natitingou",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 245,
+  "fields": {
+    "universite": 18,
+    "categorie": 21,
+    "nom": "Institut National Supérieur de Technologie Industrielle (INSTI)",
+    "sigle": "INSTI",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 246,
+  "fields": {
+    "universite": 18,
+    "categorie": 21,
+    "nom": "Institut National Supérieur des Classes Préparatoires aux Etudes d'Ingénieurs (INSPEI)",
+    "sigle": "INSPEI",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 247,
+  "fields": {
+    "universite": 19,
+    "categorie": 22,
+    "nom": "Établissement non précisé IV",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 248,
+  "fields": {
+    "universite": 19,
+    "categorie": 22,
+    "nom": "Ecole d'Agrobusiness et de Politiques Agricoles (EAPA)",
+    "sigle": "EAPA",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 249,
+  "fields": {
+    "universite": 19,
+    "categorie": 22,
+    "nom": "Ecole d'Aquaculture (EAq)",
+    "sigle": "EAq",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 250,
+  "fields": {
+    "universite": 19,
+    "categorie": 22,
+    "nom": "Ecole d'Horticulture et d'Aménagement des Espaces Verts (EHAEV)",
+    "sigle": "EHAEV",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 251,
+  "fields": {
+    "universite": 19,
+    "categorie": 22,
+    "nom": "Ecole de Foresterie Tropicale (EForT)",
+    "sigle": "EForT",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 252,
+  "fields": {
+    "universite": 19,
+    "categorie": 22,
+    "nom": "Ecole de Génie Rural (EGR)",
+    "sigle": "EGR",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 253,
+  "fields": {
+    "universite": 19,
+    "categorie": 22,
+    "nom": "Ecole de Gestion et d'Exploitation des Systèmes d'Elevage (EGESE)",
+    "sigle": "EGESE",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 254,
+  "fields": {
+    "universite": 19,
+    "categorie": 22,
+    "nom": "Ecole de Gestion et de Production Végétale et Semencière (EGPVS)",
+    "sigle": "EGPVS",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 255,
+  "fields": {
+    "universite": 19,
+    "categorie": 22,
+    "nom": "Ecole de Sociologie rurale et de Vulgarisation Agricole (ESRVA)",
+    "sigle": "ESRVA",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 256,
+  "fields": {
+    "universite": 19,
+    "categorie": 22,
+    "nom": "Ecole des Sciences et Techniques de Conservation et de Transformation des Produits Agricoles (ESTCTPA)",
+    "sigle": "ESTCTPA",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 257,
+  "fields": {
+    "universite": 19,
+    "categorie": 22,
+    "nom": "V - Université Africaine de Développemen Coopératif V — Université Africaine de Développemen",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 258,
+  "fields": {
+    "universite": 20,
+    "categorie": 23,
+    "nom": "Établissement non précisé V",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 259,
+  "fields": {
+    "universite": 20,
+    "categorie": 23,
+    "nom": "UFR Economie et Gestion Coopératives (UFR/EGC)",
+    "sigle": "UFR/EGC",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 260,
+  "fields": {
+    "universite": 20,
+    "categorie": 23,
+    "nom": "UFR Financement et Micro financement (UFR/FMF)",
+    "sigle": "UFR/FMF",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 261,
+  "fields": {
+    "universite": 20,
+    "categorie": 23,
+    "nom": "UFR Gestion du Développement (UFR/GD)",
+    "sigle": "UFR/GD",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 262,
+  "fields": {
+    "universite": 20,
+    "categorie": 23,
+    "nom": "VI - Institut Universitaire d'Enseigneme Professionnel VI — Institut Universitaire d'Enseigneme",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 263,
+  "fields": {
+    "universite": 21,
+    "categorie": 24,
+    "nom": "Métiers de l'agriculture VII - Établissements de Sèmè City",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 264,
+  "fields": {
+    "universite": null,
+    "categorie": 25,
+    "nom": "Africa Design School",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 265,
+  "fields": {
+    "universite": null,
+    "categorie": 25,
+    "nom": "Ecole de l’Innovation et de l’Expertise Informatique (EPITECH) VIII - Écoles Inter-États VIII — Écoles Inter-États",
+    "sigle": "EPITECH",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 266,
+  "fields": {
+    "universite": null,
+    "categorie": 26,
+    "nom": "Centre d'Appui aux Ecoles de Statistique Africaines (CAPESA)",
+    "sigle": "CAPESA",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 267,
+  "fields": {
+    "universite": null,
+    "categorie": 26,
+    "nom": "Ecole Africaine des Métiers de l'Architecture et de l'Urbanisme (EAMAU)",
+    "sigle": "EAMAU",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 268,
+  "fields": {
+    "universite": null,
+    "categorie": 26,
+    "nom": "Ecole Centrale de Casablanca",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 269,
+  "fields": {
+    "universite": null,
+    "categorie": 26,
+    "nom": "Ecole inter-Etats des Sciences et Médecine Vétérinaires (EISMV)",
+    "sigle": "EISMV",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 270,
+  "fields": {
+    "universite": null,
+    "categorie": 26,
+    "nom": "Ecole Supérieure Multinationale de Télécommunications (ESMT)",
+    "sigle": "ESMT",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 271,
+  "fields": {
+    "universite": null,
+    "categorie": 26,
+    "nom": "Institut de Formation et de Recherche démographique IX - Établissements Privés d'Enseignemen",
+    "sigle": "",
+    "ville": "",
+    "secteur": "public",
+    "regime": "na"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 272,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "African School Of Economics (ASE)",
+    "sigle": "ASE",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 273,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "ASSANA-FORMATION",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 274,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "(MAV) - Journalisme Radio",
+    "sigle": "MAV",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 275,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Centre de Formation Professionnelle et de Perfectionnement (CFPP)",
+    "sigle": "CFPP",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 276,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Centre de Formation Touristique et Hôtelière (CFTH)",
+    "sigle": "CFTH",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 277,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Centre des Sciences et de l’Education AL WAFAA",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 278,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Centre International de Formation à l'Expertise Comptable (CIFEC)",
+    "sigle": "CIFEC",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 279,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Centre International Universitaire des Meilleurs",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 280,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Classes Préparatoires Audacia (CP-A)",
+    "sigle": "CP-A",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 281,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole de Commerce de Lyon Campus Bénin",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 282,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole de Formation des Enseignants du Secondaire - SAPIENTIA",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 283,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Internationale de Graphisme (EIG)",
+    "sigle": "EIG",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 284,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Internationale de Théâtre du Bénin (EITB) Licence professionnelle en Arts et Techniques du Théâtre Licence professionnelle En ouverture",
+    "sigle": "EITB",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 285,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole PIGIER BENIN",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 286,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Polytechnique Universitaire des métiers d’Avenirs (EPUMA)",
+    "sigle": "EPUMA",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 287,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Professionnelle Salésienne St Jean BOSCO Filières de Formations professionnelles Autre En ouverture",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 288,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieur de Teschnologie et de Gestion (ESTG)",
+    "sigle": "ESTG",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 289,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieur Polytechnique (ESP)",
+    "sigle": "ESP",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 290,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure d’Administration et d’Economie (ESAE) Licence professionnelle en Administration Générale Licence professionnelle Agréé",
+    "sigle": "ESAE",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 291,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure d’Expertise Comptable (ESEC) Licence professionnelle en Comptabilité Gestion Licence professionnelle Agréé",
+    "sigle": "ESEC",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 292,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure d’Ingénierie Sainte Marie Stella Classe Préparatoire au cycle d’ingénieur Classe préparatoire Agréé",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 293,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure de Génie Civil VERECHAGUINE A.K. (ESGC)",
+    "sigle": "ESGC",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 294,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure de Gestion d’Informatique et des Sciences (ESGIS)",
+    "sigle": "ESGIS",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 295,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure de Gestion et de Technologie (ESGT)",
+    "sigle": "ESGT",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 296,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure De Gestion SERENA",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 297,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure de Management (ESM)",
+    "sigle": "ESM",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 298,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure de Technologie et de Gestion (ESTG)",
+    "sigle": "ESTG",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 299,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure des cadres du funéraire Formation des Directeurs du funérarium et les conseillers Autre En ouverture",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 300,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure des Cadres et Techniciens (ESCT) Humaines",
+    "sigle": "ESCT",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 301,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure des Elites du Numérique et de la Gestion (ESENG)",
+    "sigle": "ESENG",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 302,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure des Ingénieurs Géomètres Topographes (ESIGT) Licence professionnelle en Géomètre Topographe Licence professionnelle En ouverture",
+    "sigle": "ESIGT",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 303,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure des Métiers des Energies Renouvelables (ESMER)",
+    "sigle": "ESMER",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 304,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure Jean Michel Le Faucon (ESJMF) Licence professionnelle en Gestion environnement : Licence professionnelle En ouverture",
+    "sigle": "ESJMF",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 305,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure Panafricaine de Management Appliqué (ESPAM)",
+    "sigle": "ESPAM",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 306,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure Polytechnique Le Pharaon assainissement",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 307,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "BAPES en Histoire et Géographie BAPES En ouverture",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 308,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "(MGE)",
+    "sigle": "MGE",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 309,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure Saint-Louis d’Afrique Licence en Relations Internationales Licence En ouverture",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 310,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole supérieure Sainte Félicité (ESSF)",
+    "sigle": "ESSF",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 311,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Ecole Supérieure Universitaire st Clements and Commonwealth",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 312,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "EPS « LA CITE »",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 313,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "ESFAM-BENIN",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 314,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "GNON GANI",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 315,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Haute Ecole d’Industrie et de Management HEIM WELDIOS Licence professionnelle en Génie Civil. Licence professionnelle En ouverture",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 316,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Haute Ecole de Commerce et de Management (HECM) Licence professionnelle Eau et Assainissement Licence professionnelle En ouverture",
+    "sigle": "HECM",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 317,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Haute Ecole de Gestion et de Journalisme de Bohicon (HEGJ) Licence en Journalisme. Licence Agréé",
+    "sigle": "HEGJ",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 318,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Haute Ecole de Gestion et de Technologie (HEGT)",
+    "sigle": "HEGT",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 319,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Haute école des Métiers Techniques (HECOMET)",
+    "sigle": "HECOMET",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 320,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Haute Ecole du Numérique et des Sciences des Affaires (HENSA)",
+    "sigle": "HENSA",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 321,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Houdégbé North American University (HNAUB) Licence en Maintenance informatique et réseaux Licence En ouverture",
+    "sigle": "HNAUB",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 322,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Africain des Technologies Futuristes (IATF) Licence professionnelle en journalisme, MultiMedia et Licence professionnelle En ouverture",
+    "sigle": "IATF",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 323,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Africain Ibn Batouta (IAIB) Licence professionnelle en Lettres et Littérature Licence professionnelle En ouverture",
+    "sigle": "IAIB",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 324,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut CERCO",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 325,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut de Formations Avancées (IFA TOSSI) BAPES Lettres Modernes BAPES En ouverture",
+    "sigle": "IFA TOSSI",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 326,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut International de Management (IIM)",
+    "sigle": "IIM",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 327,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Jean Paul II de Philosophie et de Sciences Humaines l’Education",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 328,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Polytechnique LE CITOYEN BAPES en PCT BAPES En ouverture",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 329,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Polytechnique Paul Hazoume (IPPH)",
+    "sigle": "IPPH",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 330,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Régional de Formation Professionnelle (IRFP)",
+    "sigle": "IRFP",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 331,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Supérieur d'Expertise et de Gestion (ISEG)",
+    "sigle": "ISEG",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 332,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Supérieur d’Expertise et Gestion (ISEG)",
+    "sigle": "ISEG",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 333,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Supérieur de Communication et de Gestion (ISCG)",
+    "sigle": "ISCG",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 334,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Supérieur de Formation Professionnelle (ISFOP) BAPES Français BAPES En ouverture",
+    "sigle": "ISFOP",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 335,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Supérieur de Génie-Civil et de Gestion (ISGG) Licence Professionnelle en Géomètre -Topographe Licence professionnelle En ouverture",
+    "sigle": "ISGG",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 336,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Supérieur de l’Afrique de l’Ouest (ISAO) Licence professionnelle en Relations Internationales Licence professionnelle En ouverture",
+    "sigle": "ISAO",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 337,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Supérieur de Management Adonaï (ISM Adonaï) locales",
+    "sigle": "ISM Adonaï",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 338,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Supérieur de Mathématiques de la Décision (ISMADE) Licence professionnelle en Mathématiques de la décision Licence professionnelle En ouverture",
+    "sigle": "ISMADE",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 339,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Supérieur des Métiers de l’Audiovisuel (ISMA) Licence professionnelle en Journalisme Audiovisuel Licence professionnelle Agréé",
+    "sigle": "ISMA",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 340,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Supérieur Golden Academy (ISGA)",
+    "sigle": "ISGA",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 341,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Supérieur HCUB Licence Professionnelle Analyse Biomédicale Licence professionnelle En ouverture",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 342,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Supérieur la Nouvelle Espérance (ISNE)",
+    "sigle": "ISNE",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 343,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Supérieur NOTRE Dame d'Afrique (ISNDA)",
+    "sigle": "ISNDA",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 344,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Supérieur Saint Paul de Tarse (ISSPT)",
+    "sigle": "ISSPT",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 345,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire Africain du Bénin (IUAB)",
+    "sigle": "IUAB",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 346,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire Courage",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 347,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire de Bohicon (IUBO) Licence Droit Licence En ouverture",
+    "sigle": "IUBO",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 348,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire de Langue et des Sciences",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 349,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire des Métiers d’Avenir (IUMA)",
+    "sigle": "IUMA",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 350,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire du Benin (IUB)",
+    "sigle": "IUB",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 351,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire du Professorat et de Management (IUPM)",
+    "sigle": "IUPM",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 352,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire EDEXCEL",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 353,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire la Grace (IUG)",
+    "sigle": "IUG",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 354,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire le Grand Berger du Bénin",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 355,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire Les COURS SONOU",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 356,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire Les COURS SONOU (LCS)",
+    "sigle": "LCS",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 357,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire MatheFineco (IUM)",
+    "sigle": "IUM",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 358,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire Panafricain (IUP) Licence professionnelle en hôtellerie et restauration Licence professionnelle En ouverture",
+    "sigle": "IUP",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 359,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire Saints Adrien et Anselme Licence en génie énergétique et développement durable Licence En ouverture",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 360,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire ULTIME des Sciences et Technologies",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 361,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Institut Universitaire West African Union",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 362,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "IRGIB-AFRICA UNIVERSITY",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 363,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "La Nouvelle Ecole des Métiers (LaNEM) Licence professionnelle en MultiMedia et Informatique Licence professionnelle En ouverture",
+    "sigle": "LaNEM",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 364,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Pinnacle African Institute",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 365,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "POLYTECH ADA (Ecole Polytechnique des Génies) Licence professionnelle en Génie Civil Licence professionnelle Agréé",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 366,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "POMA Licence professionnelle en marketing et action commerciale Licence professionnelle En ouverture",
+    "sigle": "",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 367,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Université Catholique d’Afrique de l’Ouest (UCAO)",
+    "sigle": "UCAO",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.etablissement",
+  "pk": 368,
+  "fields": {
+    "universite": null,
+    "categorie": 27,
+    "nom": "Université Protestante de l’Afrique de l’Ouest (UPAO)",
+    "sigle": "UPAO",
+    "ville": "",
+    "secteur": "prive",
+    "regime": "agree"
+  }
+},
+{
+  "model": "catalogue.universite",
+  "pk": 16,
+  "fields": {
+    "categorie": 19,
+    "nom": "Université d'Abomey Calavi",
+    "sigle": "I",
+    "ville": ""
+  }
+},
+{
+  "model": "catalogue.universite",
+  "pk": 17,
+  "fields": {
+    "categorie": 20,
+    "nom": "Université de Parakou",
+    "sigle": "II",
+    "ville": ""
+  }
+},
+{
+  "model": "catalogue.universite",
+  "pk": 18,
+  "fields": {
+    "categorie": 21,
+    "nom": "Université Nationale des Sciences, Technologies, Ingénierie et Mathématiques",
+    "sigle": "III",
+    "ville": ""
+  }
+},
+{
+  "model": "catalogue.universite",
+  "pk": 19,
+  "fields": {
+    "categorie": 22,
+    "nom": "Université Nationale d'Agriculture",
+    "sigle": "IV",
+    "ville": ""
+  }
+},
+{
+  "model": "catalogue.universite",
+  "pk": 20,
+  "fields": {
+    "categorie": 23,
+    "nom": "Université Africaine de Développement Coopératif",
+    "sigle": "V",
+    "ville": ""
+  }
+},
+{
+  "model": "catalogue.universite",
+  "pk": 21,
+  "fields": {
+    "categorie": 24,
+    "nom": "Institut Universitaire d'Enseignement Professionnel",
+    "sigle": "VI",
+    "ville": ""
+  }
+}
+]

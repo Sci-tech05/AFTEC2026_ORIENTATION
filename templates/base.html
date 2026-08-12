@@ -1,0 +1,54 @@
+{% load static %}
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}AFTEC Orientation 2026{% endblock %}</title>
+  <link rel="icon" type="image/svg+xml" href="{% static 'icons/favicon.svg' %}">
+  <link rel="icon" type="image/svg+xml" sizes="any" href="{% static 'icons/favicon.svg' %}">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="{% static 'css/app.css' %}">
+</head>
+<body class="bg-[#FAFAF7] text-[#26313f]">
+  <header class="sticky top-0 z-30 border-b border-slate-200 bg-white/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4">
+      <a href="{% url 'core:home' %}" class="font-black text-[#12304D]">AFTEC Orientation 2026</a>
+      <div class="flex flex-wrap justify-end gap-3 text-sm font-bold">
+        <a class="text-[#12304D] transition hover:text-[#9A6A13]" href="{% url 'candidats:orientation' %}">Orientation</a>
+        <a class="text-[#12304D] transition hover:text-[#9A6A13]" href="{% url 'core:etablissements' %}">Annuaire</a>
+      </div>
+    </nav>
+  </header>
+  <main>{% block content %}{% endblock %}</main>
+  <footer class="mt-16 bg-[#12304D] text-white">
+    <div class="mx-auto grid max-w-6xl gap-8 px-4 py-10 md:grid-cols-[1.1fr_.7fr_.7fr]">
+      <div>
+        <p class="text-sm font-bold uppercase tracking-wide text-[#D8A62A]">KcoMat Académie - Pobè</p>
+        <h2 class="mt-2 text-2xl font-black">AFTEC Orientation 2026</h2>
+        <p class="mt-3 max-w-xl text-sm leading-6 text-white/75">Outil d'aide à l'orientation pour comparer les formations, comprendre les critères de classement et préparer les choix après le BAC.</p>
+      </div>
+      <div>
+        <h3 class="font-black">Navigation</h3>
+        <div class="mt-3 grid gap-2 text-sm text-white/75">
+          <a class="hover:text-white" href="{% url 'core:home' %}">Accueil</a>
+          <a class="hover:text-white" href="{% url 'candidats:orientation' %}">Parcours orientation</a>
+          <a class="hover:text-white" href="{% url 'core:etablissements' %}">Annuaire des établissements</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-black">Note importante</h3>
+        <p class="mt-3 text-sm leading-6 text-white/75">Les résultats sont des estimations basées sur les quotas et critères publiés par le MESRS. Seule la plateforme officielle du MESRS fait foi.</p>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-4 text-xs text-white/60">
+        <p>Guide MESRS 2026-2027 - Données importées pour AFTEC.</p>
+        <p>Conçu pour une utilisation mobile-first.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

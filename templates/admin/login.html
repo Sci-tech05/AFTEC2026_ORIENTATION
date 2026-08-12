@@ -1,0 +1,69 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block title %}Connexion | AFTEC Admin{% endblock %}
+
+{% block bodyclass %}login{% endblock %}
+
+{% block nav-breadcrumbs %}{% endblock %}
+
+{% block nav-sidebar %}{% endblock %}
+
+{% block content %}
+<div class="aftec-admin-shell aftec-login-wrap">
+  <aside class="aftec-login-aside">
+    <div class="badge">AFTEC Orientation 2026</div>
+    <h1>Gérez le guide, les candidats et les filières depuis un espace clair et rapide.</h1>
+    <p>Connexion sécurisée pour piloter le catalogue MESRS, les profils candidats, les notes BAC et les contenus d'orientation avec un tableau de bord lisible.</p>
+    <div class="aftec-login-features">
+      <div class="aftec-login-feature">
+        <strong>Catalogue structuré</strong><br>
+        Universités, établissements, filières, séries et coefficients regroupés.
+      </div>
+      <div class="aftec-login-feature">
+        <strong>Vue opérationnelle</strong><br>
+        Accès rapide aux derniers candidats, filières et établissements modifiés.
+      </div>
+      <div class="aftec-login-feature">
+        <strong>Branding cohérent</strong><br>
+        Même palette visuelle que l'application publique.
+      </div>
+    </div>
+  </aside>
+
+  <section class="aftec-login-card">
+    <div class="aftec-login-card-head">
+      <p class="aftec-kicker" style="color: #9a6a13;">Accès administrateur</p>
+      <h2>Connexion sécurisée</h2>
+      <p>Utilise ton compte administrateur pour ouvrir le back-office AFTEC et gérer le contenu du guide.</p>
+    </div>
+
+    {% if form.errors and not form.non_field_errors %}
+      <p class="errornote">Votre nom d'utilisateur et votre mot de passe ne correspondent pas. Veuillez réessayer.</p>
+    {% endif %}
+
+    {% if form.non_field_errors %}
+      <div class="errornote">{{ form.non_field_errors }}</div>
+    {% endif %}
+
+    <form action="{{ app_path }}" method="post" id="login-form" class="aftec-login-form">
+      {% csrf_token %}
+      <div class="aftec-login-field">
+        {{ form.username.errors }}
+        <label for="id_username">Nom d'utilisateur</label>
+        {{ form.username }}
+      </div>
+      <div class="aftec-login-field">
+        {{ form.password.errors }}
+        <label for="id_password">Mot de passe</label>
+        {{ form.password }}
+        <input type="hidden" name="next" value="{{ next }}">
+      </div>
+      <div class="aftec-login-actions">
+        <button type="submit" class="aftec-btn-primary">Se connecter</button>
+        <p>Accès réservé aux administrateurs autorisés.</p>
+      </div>
+    </form>
+  </section>
+</div>
+{% endblock %}

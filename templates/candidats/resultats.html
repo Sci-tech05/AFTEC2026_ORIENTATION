@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}Résultats - AFTEC{% endblock %}
+{% block content %}
+<section class="mx-auto max-w-6xl px-4 py-8">
+  <div class="mb-6 flex flex-wrap items-end justify-between gap-4">
+    <div>
+      <p class="text-sm font-bold uppercase tracking-wide text-[#9A6A13]">{{ candidat.diplome_examen }} {{ candidat.option_diplome }} - {{ candidat.prenom }} {{ candidat.nom }}</p>
+      <h1 class="text-3xl font-black text-[#12304D]">Recommandations d'orientation</h1>
+    </div>
+    <a class="rounded-lg bg-[#B98A1B] px-4 py-3 font-bold text-white" href="{% url 'rapports:rapport_pdf' candidat.id %}">Télécharger le rapport PDF</a>
+  </div>
+
+  <div class="mb-6 grid gap-4 md:grid-cols-2">
+    <div class="rounded-lg bg-white p-5 shadow">
+      <p class="text-sm font-bold uppercase tracking-wide text-[#9A6A13]">Ta moyenne générale</p>
+      <p class="mt-2 text-4xl font-black text-[#12304D]">{% if moyenne_generale %}{{ moyenne_generale }}/20{% else %}--{% endif %}</p>
+      <p class="mt-2 text-sm leading-6 text-slate-600">Calculée avec les notes saisies et les coefficients disponibles pour ton diplôme ou examen.</p>
+    </div>
+    <div class="rounded-lg bg-[#12304D] p-5 text-white shadow">
+      <p class="text-sm font-bold uppercase tracking-wide text-white/70">Ta moyenne de classement</p>
+      <p class="mt-2 text-4xl font-black">Par filière</p>
+      <p class="mt-2 text-sm leading-6 text-white/75">Elle change selon les matières principales demandées par chaque formation. Elle n'est jamais confondue avec la moyenne générale.</p>
+    </div>
+  </div>
+
+  {% if details_generale %}
+    <details class="mb-6 rounded-lg bg-white p-5 shadow">
+      <summary class="cursor-pointer font-bold text-[#12304D]">Voir le détail de la moyenne générale</summary>
+      <div class="mt-4 grid gap-2 md:grid-cols-3">
+        {% for detail in details_generale %}
+          <div class="rounded-lg border border-slate-200 p-3 text-sm">
+            <p class="font-bold text-[#12304D]">{{ detail.matiere }}</p>
+            <p>note = {% if detail.note %}{{ detail.note }}{% else %}manquante{% endif %}</p>
+            <p>coefficient = {{ detail.coefficient }}</p>
+            <p>contribution = {% if detail.contribution %}{{ detail.contribution }}{% else %}--{% endif %}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </details>
+  {% endif %}
+
+  <div class="grid gap-4">
+    {% for item in recommandations %}
+      <article class="rounded-lg border border-slate-200 bg-white p-5 shadow-lg">
+        <div class="flex flex-wrap justify-between gap-4">
+          <div>
+            <h2 class="text-xl font-black text-[#12304D]">{{ item.filiere.intitule }}</h2>
+            <p class="text-sm text-slate-600">{{ item.filiere.etablissement }} - {{ item.filiere.etablissement.categorie.nom }}</p>
+          </div>
+          <div class="text-right">
+            <p class="text-2xl font-black text-[#12304D]">{% if item.moyenne_classement %}{{ item.moyenne_classement }}/20{% else %}--{% endif %}</p>
+            <p class="text-sm font-semibold text-slate-600">Moyenne de classement</p>
+          </div>
+        </div>
+        <div class="mt-4 grid gap-3 md:grid-cols-3">
+          <div class="rounded-lg bg-[#F4F1E8] p-3 text-sm">Bourse : <strong>{{ item.filiere.quota_bourse }}</strong> | Aide/FPP : <strong>{{ item.filiere.quota_aide_fpp }}</strong></div>
+          <div class="rounded-lg bg-[#F4F1E8] p-3 text-sm">{{ item.indicateur }}</div>
+          <div class="rounded-lg bg-[#F4F1E8] p-3 text-sm">Mode : {{ item.filiere.get_mode_entree_display }}</div>
+        </div>
+        <details class="mt-4">
+          <summary class="cursor-pointer font-semibold text-[#12304D]">Voir le détail du calcul</summary>
+          <ul class="mt-2 grid gap-2 text-sm text-slate-700 md:grid-cols-3">
+            {% for detail in item.details %}
+              <li class="rounded-lg border border-slate-200 p-3">
+                <strong class="text-[#12304D]">{{ detail.matiere }}</strong><br>
+                note = {% if detail.note %}{{ detail.note }}{% else %}manquante{% endif %}<br>
+                coefficient = {{ detail.coefficient }}<br>
+                contribution = {% if detail.contribution %}{{ detail.contribution }}{% else %}--{% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+          <p class="mt-3 text-sm text-slate-700">{{ item.filiere.debouches }}</p>
+        </details>
+      </article>
+    {% empty %}
+      <p class="rounded-lg bg-white p-5 shadow">Aucune filière compatible avec ce diplôme ou examen dans le jeu de données actuel.</p>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

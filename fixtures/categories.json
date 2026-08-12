@@ -1,0 +1,101 @@
+[
+{
+  "model": "catalogue.categorieetablissement",
+  "pk": 19,
+  "fields": {
+    "code": "I",
+    "nom": "Université d'Abomey Calavi",
+    "type": "public_universite",
+    "logo": "",
+    "description": ""
+  }
+},
+{
+  "model": "catalogue.categorieetablissement",
+  "pk": 20,
+  "fields": {
+    "code": "II",
+    "nom": "Université de Parakou",
+    "type": "public_universite",
+    "logo": "",
+    "description": ""
+  }
+},
+{
+  "model": "catalogue.categorieetablissement",
+  "pk": 21,
+  "fields": {
+    "code": "III",
+    "nom": "Université Nationale des Sciences, Technologies, Ingénierie et Mathématiques",
+    "type": "public_universite",
+    "logo": "",
+    "description": ""
+  }
+},
+{
+  "model": "catalogue.categorieetablissement",
+  "pk": 22,
+  "fields": {
+    "code": "IV",
+    "nom": "Université Nationale d'Agriculture",
+    "type": "public_universite",
+    "logo": "",
+    "description": ""
+  }
+},
+{
+  "model": "catalogue.categorieetablissement",
+  "pk": 23,
+  "fields": {
+    "code": "V",
+    "nom": "Université Africaine de Développement Coopératif",
+    "type": "public_universite",
+    "logo": "",
+    "description": ""
+  }
+},
+{
+  "model": "catalogue.categorieetablissement",
+  "pk": 24,
+  "fields": {
+    "code": "VI",
+    "nom": "Institut Universitaire d'Enseignement Professionnel",
+    "type": "public_universite",
+    "logo": "",
+    "description": ""
+  }
+},
+{
+  "model": "catalogue.categorieetablissement",
+  "pk": 25,
+  "fields": {
+    "code": "VII",
+    "nom": "Établissements de Sèmè City",
+    "type": "semecity",
+    "logo": "",
+    "description": ""
+  }
+},
+{
+  "model": "catalogue.categorieetablissement",
+  "pk": 26,
+  "fields": {
+    "code": "VIII",
+    "nom": "Écoles Inter-États",
+    "type": "public_ecole_inter_etats",
+    "logo": "",
+    "description": ""
+  }
+},
+{
+  "model": "catalogue.categorieetablissement",
+  "pk": 27,
+  "fields": {
+    "code": "IX",
+    "nom": "Établissements Privés d'Enseignement Supérieur (EPES)",
+    "type": "prive_epes",
+    "logo": "",
+    "description": ""
+  }
+}
+]
