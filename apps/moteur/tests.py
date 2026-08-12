@@ -3,7 +3,16 @@ from decimal import Decimal
 from django.test import TestCase
 
 from apps.candidats.models import Candidat, NoteBac
-from apps.catalogue.models import Etablissement, Filiere, FiliereSerieRecommandee, Matiere, MatiereClassement, SerieBac, CategorieEtablissement
+from apps.catalogue.models import (
+    CategorieEtablissement,
+    Etablissement,
+    Filiere,
+    FiliereSerieRecommandee,
+    Matiere,
+    MatiereClassement,
+    SerieBac,
+    SerieMatiereCoefficient,
+)
 from apps.moteur.services import calculer_recommandations
 
 
@@ -16,6 +25,9 @@ class MoteurOrientationTests(TestCase):
         maths = Matiere.objects.create(nom="Maths")
         francais = Matiere.objects.create(nom="Français")
         pct = Matiere.objects.create(nom="PCT")
+        SerieMatiereCoefficient.objects.create(serie=self.serie, matiere=maths, coefficient=5, ordre_affichage=1)
+        SerieMatiereCoefficient.objects.create(serie=self.serie, matiere=francais, coefficient=2, ordre_affichage=2)
+        SerieMatiereCoefficient.objects.create(serie=self.serie, matiere=pct, coefficient=4, ordre_affichage=3)
         filiere_classement = Filiere.objects.create(
             etablissement=etablissement,
             intitule="Mathématiques Informatique et Applications",
@@ -38,7 +50,7 @@ class MoteurOrientationTests(TestCase):
         fsr_classement = FiliereSerieRecommandee.objects.create(filiere=filiere_classement, serie=self.serie)
         fsr_concours = FiliereSerieRecommandee.objects.create(filiere=filiere_concours, serie=self.serie)
         for fsr in (fsr_classement, fsr_concours):
-            MatiereClassement.objects.create(filiere_serie=fsr, matiere=maths, coefficient=2, ordre_affichage=1)
+            MatiereClassement.objects.create(filiere_serie=fsr, matiere=maths, coefficient=1, ordre_affichage=1)
             MatiereClassement.objects.create(filiere_serie=fsr, matiere=francais, coefficient=1, ordre_affichage=2)
             MatiereClassement.objects.create(filiere_serie=fsr, matiere=pct, coefficient=1, ordre_affichage=3)
         self.matieres = {"maths": maths, "francais": francais, "pct": pct}
@@ -53,7 +65,11 @@ class MoteurOrientationTests(TestCase):
 
         result = calculer_recommandations(candidat)[0]
 
-        self.assertEqual(result.moyenne_classement, Decimal("13.75"))
+        self.assertEqual(result.moyenne_classement, Decimal("13.73"))
+        self.assertEqual(
+            [(detail["coefficient"], detail["contribution"]) for detail in result.details],
+            [(5, Decimal("75")), (2, Decimal("24")), (4, Decimal("52"))],
+        )
         self.assertEqual(result.indicateur, "Chances moyennes pour l'aide/FPP")
 
     def test_signale_les_matieres_manquantes(self):

@@ -52,6 +52,10 @@ def _matches_secteur(filiere, secteur):
 
 def calculer_recommandations(candidat, limit=None):
     notes = {note.matiere_id: note.note for note in candidat.notes.select_related("matiere")}
+    coefficients_bac = {
+        coefficient.matiere_id: Decimal(coefficient.coefficient)
+        for coefficient in candidat.serie_bac.coefficients_bac.all()
+    }
     passions = candidat.passions or []
     recommandations = []
     mode_entree = (candidat.preference_mode_entree or "").strip().lower()
@@ -73,7 +77,7 @@ def calculer_recommandations(candidat, limit=None):
         missing = []
         for item in filiere_serie.matieres_classement.all():
             note = notes.get(item.matiere_id)
-            coef = Decimal(item.coefficient)
+            coef = coefficients_bac.get(item.matiere_id, Decimal(item.coefficient))
             contribution = None
             if note is None:
                 missing.append(item.matiere.nom)
@@ -81,7 +85,7 @@ def calculer_recommandations(candidat, limit=None):
                 contribution = note * coef
                 total += contribution
                 total_coef += coef
-            details.append({"matiere": item.matiere.nom, "coefficient": item.coefficient, "note": note, "contribution": contribution})
+            details.append({"matiere": item.matiere.nom, "coefficient": int(coef), "note": note, "contribution": contribution})
 
         moyenne = (total / total_coef).quantize(Decimal("0.01")) if total_coef and not missing else None
         filiere = filiere_serie.filiere
