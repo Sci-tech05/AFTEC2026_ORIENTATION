@@ -34,7 +34,10 @@ SECRET_KEY = os.environ.get(
 DEBUG = os.environ.get("DEBUG", "True") == "True"
 
 # Hosts allowed (comma separated in env), default keeps localhost for local dev
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS", "127.0.0.1,localhost,testserver").split(",")
+ALLOWED_HOSTS = os.environ.get(
+    "ALLOWED_HOSTS",
+    "127.0.0.1,localhost,testserver,aftec2026-orientation.onrender.com",
+).split(",")
 
 
 # Application definition
