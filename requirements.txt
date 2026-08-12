@@ -1,2 +1,6 @@
 Django==5.1.4
 weasyprint
+gunicorn
+whitenoise
+dj-database-url
+psycopg2-binary
